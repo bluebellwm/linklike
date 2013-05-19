@@ -14,6 +14,10 @@ class LinkTests {
     void testCanCreLink(){
     	def alink = new Link(title: "Google", url: "www.google.com")
     	assert alink != null
-    	assertEquals 0, alink.likes
+    }
+    
+    void testDefaultLikes(){
+        def blink = new Link(title: "Facebook", url: "www.facebook.com")
+        assertEquals 0, blink.likes
     }
 }
