@@ -11,7 +11,9 @@ import org.junit.*
 @TestFor(Link)
 class LinkTests {
 
-    void testSomething() {
-       fail "Implement me"
+    void testCanCreLink(){
+    	def alink = new Link(title: "Google", url: "www.google.com")
+    	assert alink != null
+    	assertEquals 0, alink.likes
     }
 }
